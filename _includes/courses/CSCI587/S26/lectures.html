@@ -1,0 +1,94 @@
+
+<p>
+<div class="post">
+  <article class="post-content clearfix">
+    <table class="table table-hover">
+      <colgroup>
+        <col style="width:5%">
+        <col style="width:35%">
+        <col style="width:45%">
+        <col style="width:15%">
+      </colgroup>
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">Date</th>
+          <th scope="col">Lecture</th>
+          <th scope="col">Readings</th>
+          <th scope="col">Logistics</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% assign prev_date = "" %}
+        {% assign current_module = 0 %}
+        {% assign skip_classes = 0 %}
+        {% for item in site.data.courses.CSCI587.S26.lectures %}
+        {% if item.date %}
+        {% assign lecture = item %}
+        {% assign event_type = "upcoming" %}
+        {% assign today_date = "now" | date: "%s" | divided_by: 86400 | plus: 0 %}
+        {% assign lecture_date = lecture.date | date: "%s" | divided_by: 86400 | plus: 0 %}
+        {% assign prev_date = lecture_date %}
+
+        <tr class="{{ event_type }}">
+            <th scope="row">{{ lecture.date }}</th>
+            {% if lecture.title contains 'No Class' or lecture.title contains 'Exam' %}
+            {% assign skip_classes = skip_classes | plus: 1 %}
+            <td colspan="4" align="center">{{ lecture.title }}</td>
+            {% else %}
+            <td>
+                Lecture {{ forloop.index | minus: current_module | minus: skip_classes }}
+                {% if lecture.lecturer %}({{ lecture.lecturer }}){% endif %}:
+                <br />
+                {{ lecture.title }}
+                {% if lecture.slides or lecture.video or lecture.tutorials or lecture.paper_presentations %}
+                <br />
+                [
+                    {% if lecture.slides %}
+                      <a href="{{ lecture.slides }}" target="_blank">slides</a>
+                    {% endif %}
+                    {% if lecture.video %}
+                    | <a href="{{ lecture.video }}" target="_blank">video</a>
+                    {% endif %}
+                    {% if lecture.tutorials %}
+                    | <a href="{{ lecture.tutorials }}" target="_blank">slides (part b)</a>
+                    {% endif %}
+                    {% if lecture.paper_presentations %}
+                    | <a href="{{ lecture.paper_presentations }}" target="_blank">paper presentations</a>
+                    {% endif %}
+                ]
+                {% endif %}
+            </td>
+            <td>
+                {% if lecture.homework %}
+                <ul>
+                {% for reading in lecture.homework %}
+                    <li>{{ reading }}</li>
+                {% endfor %}
+                </ul>
+                {% endif %}
+            </td>
+            <td>
+                <p>{{ lecture.logistics }}</p>
+                {% if lecture.supplementary_material %}
+                  {% for material in lecture.supplementary_material %}
+                      {{ material }}
+                  {% endfor %}
+                {% endif %}
+            </td>
+            {% endif %}
+        </tr>
+        {% else %}
+        {% assign current_module = current_module | plus: 1 %}
+        {% assign module = item %}
+        <tr class="info">
+            <td colspan="5" align="center"><strong>{{ module.title }}</strong></td>
+        </tr>
+        {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </article>
+
+</div>
+
+</p>

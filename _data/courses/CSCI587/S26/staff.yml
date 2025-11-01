@@ -1,0 +1,15 @@
+# change after every course update
+
+Instructors:
+    - name: Prof. Cyrus Shahabi
+      url: https://infolab.usc.edu/Shahabi/
+      email: shahabi@usc.edu
+      office-hours: Mon-Wed, 4-5pm, GCS 505F
+      image: people/cyrus.jpg
+
+TAs:
+    - name: Shang-Ling (Kate) Hsu
+      url: https://ktxlh.github.io/
+      office-hours: TBD
+      image: people/kate.jpg
+      email: hsushang@usc.edu

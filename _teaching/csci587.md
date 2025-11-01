@@ -17,3 +17,4 @@ category: current
 - [Fall 2019](https://infolab.usc.edu/csci587/Fall2019/)
 - [Fall 2024](./../csci587/F24/)
 - [Spring 2025](./../csci587/S25/)
+- [Spring 2026](./../csci587/S26/)
