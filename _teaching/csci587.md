@@ -4,6 +4,9 @@ title: CSCI 587 • Geospatial Information Management
 description: CSCI 587 • University of Southern California
 importance: 1
 category: current
+
+redirect_from:
+  - /teaching/csci587_catalog/
 ---
 
 ### Semester

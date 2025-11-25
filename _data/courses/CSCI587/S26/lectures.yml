@@ -8,12 +8,11 @@
   logistics:
 
 - date: 01/14
-  lecturer: 
+  lecturer: Prof. John Wilson
   title: >
-    <strong> Fundamentals of Computational Geometry </strong>
+    <strong> Applications of Geospatial Data (tentative) </strong>
   # slides: ""
   homework:
-    - <a href="https://infolab.usc.edu//teaching/csci587_syllabus/">Readings 1-6</a>
   logistics:
 
 - date: 01/19
@@ -21,6 +20,15 @@
     <strong> Martin Luther King’s Birthday Holiday, No Class </strong> 
 
 - date: 01/21
+  lecturer: Dr. Sahriar Shamsian
+  title: >
+    <strong> Fundamentals of Computational Geometry </strong>
+  # slides: ""
+  homework:
+    # - <a href="https://infolab.usc.edu//teaching/csci587_syllabus/">Readings 1-6</a>
+  logistics:
+
+- date: 01/26
   title: >
     <strong> Spatial Indexes	</strong>
   # slides: ""
@@ -32,16 +40,16 @@
   #     <a href="https://www.baeldung.com/cs/k-d-trees">(b)</a>,
   #     <a href="https://en.wikipedia.org/wiki/K-d_tree">(c)</a>  
 
-- date: 01/26
+- date: 01/28
   title: >
-    <strong>Spatial Indexes: R-Trees	</strong>
+    <strong> Spatial Indexes: R-Trees </strong>
   # slides: ""
   homework:
     - <a href="https://infolab.usc.edu/assets/pdf/courses/csci587/papers/rtree.pdf"> R-Trees, A dynamic index for spatial searching </a>
     - <a href="https://infolab.usc.edu/assets/pdf/courses/csci587/papers/rstar.pdf"> R+-Trees, A dynamic index for multi-dimensional objects</a>
   logistics: 
 
-- date: 01/28
+- date: 02/02
   title: >
     <strong> Nearest Neighbor Queries	</strong>
   # slides: ""
@@ -49,7 +57,7 @@
     -  <a href="https://infolab.usc.edu/assets/pdf/courses/csci587/papers/Nearest%20Neighbor%20Queries.pdf"> Nearest Neighbor Queries </a>
   logistics: 
 
-- date: 02/02
+- date: 02/04
   title: >
     <strong> Reverse k-Nearest Neighbor Queries	</strong>
   # slides: ""
@@ -57,7 +65,7 @@
     - <a href="https://www.vldb.org/conf/2004/RS20P1.PDF"> Reverse kNN Search in Arbitrary Dimensionality </a>
   logistics: 
 
-- date: 02/04
+- date: 02/09
   title: >
     <strong> Skyline Queries	</strong>
   # slides: ""
@@ -65,7 +73,7 @@
     - <a href="https://dl.acm.org/doi/pdf/10.1145/872757.872814"> An Optimal and Progressive Algorithm for Skyline Queries </a>
   logistics:
 
-- date: 02/09
+- date: 02/11
   title: >
     <strong> Spatial Skyline Queries	</strong>
   # slides: ""
@@ -73,14 +81,6 @@
     - <a href="https://www.vldb.org/conf/2006/p751-sharifzadeh.pdf"> The Spatial Skyline Queries </a>
     - <a href="https://dl.acm.org/doi/pdf/10.1145/1567274.1567276"> Processing Spatial Skyline Queries in Both Vector Spaces and Spatial Network Databases </a>
   logistics: 
-
-- date: 02/11
-  title: >
-    <strong> VoR Trees	</strong>
-  # slides: ""
-  homework:
-    - <a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/36592.pdf"> VoR-Tree </a>
-  logistics:
 
 - date: 02/16
   title: >
@@ -91,13 +91,21 @@
 
 - date: 02/18
   title: >
+    <strong> VoR Trees	</strong>
+  # slides: ""
+  homework:
+    - <a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/36592.pdf"> VoR-Tree </a>
+  logistics:
+
+- date: 02/23
+  title: >
     <strong> Spatial Queries: Continuous Nearest Neighbor	</strong>
   # slides: ""
   homework:
     - <a href="https://dl.acm.org/doi/pdf/10.1145/564691.564730"> Time-Parameterized Queries in Spatio-Temporal Databases </a>
   logistics: HW1 Due. <strong> HW2 is released </strong>.
 
-- date: 02/23
+- date: 02/25
   title: >
     <strong> Spatial Queries: Continuous Nearest Neighbor	</strong>
   # slides: ""
@@ -105,7 +113,7 @@
     - <a href="https://www.vldb.org/conf/2002/S09P02.pdf"> Continuous Nearest Neighbor Search </a>
   logistics:
 
-- date: 02/25
+- date: 03/02
   title: >
     <strong> Spatial Queries on non-Euclidean Space: Road Networks </strong>
   # slides: ""
@@ -113,7 +121,7 @@
     - <a href="https://www.vldb.org/conf/2003/papers/S24P02.pdf"> Query Processing in Spatial Network Databases </a>
   logistics:
 
-- date: 03/02
+- date: 03/04
   title: >
     <strong> Spatial Queries on non-Euclidean Space: Road Networks II </strong>
   # slides: ""
@@ -122,20 +130,12 @@
     - <a href="https://infolab.usc.edu/assets/pdf/courses/csci587/papers/dasfaa2012_ugur.pdf"> Indexing Network Voronoi Diagrams </a>
   logistics:
 
-- date: 03/04
+- date: 03/09
   title: >
     <strong> Spatial Queries on non-Euclidean Space: Road Networks III </strong>
   # slides: ""
   homework:
     - <a href="https://dl.acm.org/doi/pdf/10.1145/1376616.1376623"> Scalable Network Distance Browsing in Spatial Databases </a>
-  logistics:
-
-- date: 03/09
-  # lecturer: 
-  title: >
-    <strong> Guest Lecture TBA </strong>
-  # slides: ""
-  homework:
   logistics:
 
 - date: 03/11

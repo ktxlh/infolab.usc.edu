@@ -230,6 +230,7 @@ plugins:
   - jekyll-jupyter-notebook
   - jekyll-link-attributes
   - jekyll-paginate-v2
+  - jekyll-redirect-from
   - jekyll/scholar
   - jekyll-sitemap
   - jekyll-toc
