@@ -31,14 +31,20 @@
 
         <tr class="{{ event_type }}">
             <th scope="row">{{ lecture.date }}</th>
-            {% if lecture.title contains 'No Class' or lecture.title contains 'Exam' %}
+            {% if (lecture.title contains 'No Class' or lecture.title contains 'Exam') and lecture.no_numbering == nil %}
             {% assign skip_classes = skip_classes | plus: 1 %}
-            <td colspan="4" align="center">{{ lecture.title }}</td>
+            <td colspan="3">{{ lecture.title }} {% if lecture.logistics %} <br> {{ lecture.logistics }} {% endif %} </td>
             {% else %}
             <td>
-                Lecture {{ forloop.index | minus: current_module | minus: skip_classes }}
-                {% if lecture.lecturer %}({{ lecture.lecturer }}){% endif %}:
+                {% if lecture.no_numbering %}
+                    {% assign skip_classes = skip_classes | plus: 1 %}
+                {% else %}
+                    Lecture {{ forloop.index | minus: current_module | minus: skip_classes }}
+                {% endif %}
+                {% if lecture.lecturer %}({{ lecture.lecturer }}){% endif %}{% unless lecture.no_numbering %}:{% endunless %}
+                {% if lecture.no_numbering == nil or lecture.lecturer %}
                 <br />
+                {% endif %}
                 {{ lecture.title }}
                 {% if lecture.slides or lecture.video or lecture.tutorials or lecture.paper_presentations %}
                 <br />

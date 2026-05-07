@@ -60,14 +60,14 @@ nav_order: 4
             {% include figure.html path="assets/img/people/bita-2.png" title="Bita Azarijoo" class="img-fluid rounded-circle z-depth-1 mx-auto" width="75%" %}
         </div>
         <h5 style="text-align:center;">Bita Azarijoo</h5>
-        <p style="text-align:center;"><i>Ph.D. Student</i></p>
+        <p style="text-align:center;"><i>Ph.D. Candidate</i></p>
         <p style="text-align:center;"></p>
     </div>
     <div class="col-sm mt-5 mt-md-0">
         <div class="text-center">
-            {% include figure.html path="assets/img/people/kate.jpg" title="Shang-Ling (Kate) Hsu" class="img-fluid rounded-circle z-depth-1 mx-auto" width="75%" %}
+            {% include figure.html path="assets/img/people/kate.png" title="Shang-Ling Hsu" class="img-fluid rounded-circle z-depth-1 mx-auto" width="75%" %}
         </div>
-        <h5 style="text-align:center;">Shang-Ling (Kate) Hsu</h5>
+        <h5 style="text-align:center;">Shang-Ling Hsu</h5>
         <p style="text-align:center;"><i>Ph.D. Student</i></p>
         <p style="text-align:center;"></p>
     </div>

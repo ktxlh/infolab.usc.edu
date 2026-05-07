@@ -40,7 +40,7 @@ Our experiments, conducted on both public and proprietary datasets, demonstrate 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0" style="margin-bottom: 20px;">
     <div class="text-center">
-        {% include figure.html path="assets/img/people/kate.jpg" title="Shang-Ling" class="img-fluid rounded-circle z-depth-1 mx-auto" width="50%" %}
+        {% include figure.html path="assets/img/people/kate.png" title="Shang-Ling" class="img-fluid rounded-circle z-depth-1 mx-auto" width="50%" %}
     </div>
     <h5 style="text-align:center;">Shang-Ling Hsu</h5>
     <p style="text-align:center;">CS PhD Student, USC</p>
