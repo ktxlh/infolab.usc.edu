@@ -40,21 +40,17 @@
                 {% if lecture.lecturer %}({{ lecture.lecturer }}){% endif %}:
                 <br />
                 {{ lecture.title }}
+                {% if lecture.video or lecture.paper_presentations %}
                 <br />
                 [
-                    {% if lecture.slides %}
-                      <a href="{{ lecture.slides }}" target="_blank">slides</a>
-                    {% endif %}
                     {% if lecture.video %}
-                    | <a href="{{ lecture.video }}" target="_blank">video</a>
-                    {% endif %}
-                    {% if lecture.tutorials %}
-                    | <a href="{{ lecture.tutorials }}" target="_blank">slides (part b)</a>
+                      <a href="{{ lecture.video }}" target="_blank">video</a>
                     {% endif %}
                     {% if lecture.paper_presentations %}
                     | <a href="{{ lecture.paper_presentations }}" target="_blank">paper presentations</a>
                     {% endif %}
                 ]
+                {% endif %}
             </td>
             <td>
                 {% if lecture.homework %}
